@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fun with triangles</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="Container">
+      <div class="tabs">
+        <button class="button1 btn">is triangle?</button>
+        <button class="button2 btn">quiz</button>
+        <button class="button3 btn">Hypotenuse</button>
+        <button class="button4 btn">area</button>
+      </div>
+      <div class="tab1 tab">
+        <div >
+          <h1 class="header">is triangle?</h1>
+          <p>Enter 3 angles and the program will tell you whether it forms a triangle or not.</p>
+        </div>
+        <div class="inputArea">
+          <div class="inputs">
+            <label for="angel1">Angel 1</label>
+            <input type="number" id="angel1">
+          </div>
+          <div class="inputs">
+            <label for="angel2">Angel 2</label>
+            <input type="number" id="angel2">
+          </div>
+          <div class="inputs">
+            <label for="angel3">Angel 3</label>
+            <input type="number" id="angel3">
+          </div>
+        </div>
+        <button id="tab1checkBtn" class="checkBtn">Check</button>
+        <div id="tab1outputArea" class="outputArea">
+        </div>
+      </div>
+
+
+
+      
+      <div class="tab2 tab">
+        <div class="quiz-container">
+        <h1 class="header">Fun triangle quiz</h1>
+        <p>Choose correcte options and get the score you have achieved. Each correct option will give you 1 point and every incorrect/unattempted question will give 0 points.</p>
+        <form action="/" class="quiz-form">
+            <div class="que-container">
+                <p class="que">1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <input type="radio" id="45°" name="que1" value="45°">
+                <label for="45°">45°</label><br>
+                <input type="radio" id="90°" name="que1" value="90°">
+                <label for="90°">90°</label><br>
+                <input type="radio" id="60°" name="que1" value="60°">
+                <label for="60°">60°</label><br>
+            </div>
+            <div class="que-container">
+                <p class="que">2. What kind of triangle will be formed if angle1 = 45° and angle2 = 45°?</p>
+                <input type="radio" id="obtuse" name="que2" value="obtuse">
+                <label for="obtuse">obtuse</label><br>
+                <input type="radio" id="acute" name="que2" value="acute">
+                <label for="acute">acute</label><br>
+                <input type="radio" id="right angled" name="que2" value="right angled">
+                <label for="right angled">right angled</label><br>
+            </div>
+            <div class="que-container">
+                <p class="que">3. A triangle can have</p>
+                <input type="radio" id="one right angle" name="que3" value="one right angle">
+                <label for="one right angle">one right angle</label><br>
+                <input type="radio" id="wo right angles" name="que3" value="wo right angles">
+                <label for="wo right angles">two right angles</label><br>
+            </div>
+            <div class="que-container">
+                <p class="que">4. Which of the following can form a right angled triangle?</p>
+                <input type="radio" id="14, 15, 26" name="que4" value="14, 15, 26">
+                <label for="14, 15, 26">14, 15, 26</label><br>
+                <input type="radio" id="12, 16, 20" name="que4" value="12, 16, 20">
+                <label for="12, 16, 20">12, 16, 20</label><br>
+            </div>
+            <div class="que-container">
+                <p class="que">5. Which of the following triangles are always similar?</p>
+                <input type="radio" id="Equilateral triangle" name="que5" value="Equilateral triangle">
+                <label for="Equilateral triangle">Equilateral triangle</label><br>
+                <input type="radio" id="Isosceles triangle" name="que5" value="Isosceles triangle">
+                <label for="Isosceles triangle">Isosceles triangle</label><br>
+            </div>
+
+            <button class="submit-btn checkBtn" type="button">Submit</button>
+        </form>
+        <p class="result outputArea"></p>
+    </div>
+      </div>
+
+
+
+
+
+
+      <div class="tab3 tab">
+        <div >
+          <h1 class="header">Calculate Hypotenuse</h1>
+          <p>Enter base and height of a right angled triangle and this program will give you the length of hypotenuse.</p>
+        </div>
+        <div class="inputArea">
+          <div class="inputs">
+            <label for="base">Base</label>
+            <input type="number" id="base">
+          </div>
+          <div class="inputs">
+            <label for="height">Height</label>
+            <input type="number" id="height">
+          </div>
+        </div>
+        <button id="tab3checkBtn" class="checkBtn">Check</button>
+        <div id="tab3outputArea" class="outputArea">
+        </div>
+      </div>
+      <div class="tab4 tab">
+        <div >
+          <h1 class="header">Calculate area of triangle</h1>
+          <p>Enter base and height of a triangle and this program will give you the area.</p>
+        </div>
+        <div class="inputArea">
+          <div class="inputs">
+            <label for="base">Base</label>
+            <input type="number" id="baseA">
+          </div>
+          <div class="inputs">
+            <label for="height">Height</label>
+            <input type="number" id="heightA">
+          </div>
+        </div>
+        <button id="tab4checkBtn" class="checkBtn">Check</button>
+        <div id="tab4outputArea" class="outputArea">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
